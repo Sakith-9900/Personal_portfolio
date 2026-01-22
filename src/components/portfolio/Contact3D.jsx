@@ -1,8 +1,8 @@
 import React, { useRef, useState } from 'react';
 import { motion, useInView } from 'framer-motion';
-import { Button } from "@/components/ui/button";
-import { Input } from "@/components/ui/input";
-import { Textarea } from "@/components/ui/textarea";
+import { Button } from "../ui/button";
+import { Input } from "../ui/input";
+import { Textarea } from "../ui/textarea";
 import { Github, Linkedin, Mail, Twitter, Send, MapPin, Phone } from 'lucide-react';
 import { toast } from 'sonner';
 
@@ -29,14 +29,14 @@ export default function Contact3D() {
   const handleSubmit = async (e) => {
     e.preventDefault();
     setIsSubmitting(true);
-    
+
     // Simulate form submission
     await new Promise(resolve => setTimeout(resolve, 1500));
-    
+
     toast.success('Message sent successfully!', {
       description: "I'll get back to you as soon as possible.",
     });
-    
+
     setFormData({ name: '', email: '', message: '' });
     setIsSubmitting(false);
   };
@@ -111,15 +111,15 @@ export default function Contact3D() {
                     initial={{ opacity: 0, y: 20 }}
                     animate={isInView ? { opacity: 1, y: 0 } : {}}
                     transition={{ delay: 0.4 + index * 0.1 }}
-                    whileHover={{ 
-                      scale: 1.1, 
+                    whileHover={{
+                      scale: 1.1,
                       y: -5,
                       boxShadow: `0 10px 30px ${social.color}40`
                     }}
                     className="group relative p-4 rounded-xl bg-gray-800/50 border border-gray-700/50 hover:border-gray-600 transition-all duration-300"
                   >
-                    <social.icon 
-                      className="w-6 h-6 text-gray-400 group-hover:text-white transition-colors" 
+                    <social.icon
+                      className="w-6 h-6 text-gray-400 group-hover:text-white transition-colors"
                       style={{ color: social.color }}
                     />
                     <div className="absolute -bottom-8 left-1/2 -translate-x-1/2 px-2 py-1 bg-gray-800 rounded text-xs text-gray-300 opacity-0 group-hover:opacity-100 transition-opacity whitespace-nowrap">
@@ -162,7 +162,7 @@ export default function Contact3D() {
             <form onSubmit={handleSubmit} className="relative">
               {/* Form glow */}
               <div className="absolute -inset-1 bg-gradient-to-r from-cyan-500/20 to-purple-500/20 rounded-2xl blur-xl opacity-50" />
-              
+
               <div className="relative bg-gray-900/80 backdrop-blur-sm rounded-2xl border border-gray-700/50 p-8">
                 <div className="space-y-6">
                   {/* Name Input */}
