@@ -8,7 +8,7 @@ import { toast } from 'sonner';
 
 const socialLinks = [
   { icon: Github, label: 'GitHub', href: 'https://github.com/Sakith-9900', color: '#fff' },
-  { icon: Linkedin, label: 'LinkedIn', href: 'https://www.linkedin.com/in/sakith-gunarathna-581334352/', color: '#0077b5' },
+  { icon: Linkedin, label: 'LinkedIn', href: 'https://www.linkedin.com/in/sakith-gunarathna/', color: '#0077b5' },
   { icon: Twitter, label: 'Twitter', href: 'https://x.com/home', color: '#1da1f2' },
   { icon: Mail, label: 'Email', href: 'sakithmandira@gmail.com', color: '#ea4335' },
 ];

@@ -4,7 +4,7 @@ import { Github, Linkedin, Twitter, Mail, Heart, ArrowUp } from 'lucide-react';
 
 const socialLinks = [
   { icon: Github, href: 'https://github.com/Sakith-9900', label: 'GitHub' },
-  { icon: Linkedin, href: 'https://www.linkedin.com/in/sakith-gunarathna-581334352/', label: 'LinkedIn' },
+  { icon: Linkedin, href: 'https://www.linkedin.com/in/sakith-gunarathna/', label: 'LinkedIn' },
   { icon: Twitter, href: 'https://x.com/home', label: 'Twitter' },
   { icon: Mail, href: 'sakithmandira@gmail.com', label: 'Email' },
 ];
